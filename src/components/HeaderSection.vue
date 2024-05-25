@@ -8,7 +8,7 @@
           <ul>
             <li><router-link to="/about">About</router-link></li>
             <li><router-link to="/projects">Projects</router-link></li>
-            <li><router-link to="/blog">Blog</router-link></li>
+            <li><router-link to="/blog">Publications</router-link></li>
             <li><router-link to="/contact">Contact</router-link></li>
           </ul>
         </nav>
@@ -39,7 +39,7 @@
   
   <style scoped>
   header {
-    background: #333;
+    background: #000;
     padding: 1rem 0;
     color: #fff;
   }
@@ -60,14 +60,17 @@
   nav ul {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
   nav ul li {
-    margin-left: 20px;
+    margin-left: 30px;
   }
   nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
+    letter-spacing: 2px;
   }
   .burger {
     display: none;
@@ -85,20 +88,23 @@
   }
   @media screen and (max-width: 768px) {
     nav ul {
-      position: absolute;
-      right: 0;
+      position: fixed;
       top: 0;
+      right: 0;
       height: 100vh;
+      width: 100%;
       background-color: #333;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 100%;
       transform: translateX(100%);
-      transition: transform 0.5s ease-in;
+      transition: transform 0.5s ease-in-out;
     }
     nav ul li {
       margin: 20px 0;
+    }
+    .nav-active ul {
+      transform: translateX(0);
     }
     .burger {
       display: block;

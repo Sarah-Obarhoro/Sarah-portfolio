@@ -20,5 +20,5 @@ export default {
 </script>
 
 <style>
-/* Add some basic styling here */
+@import './assets/css/main.css';
 </style>
