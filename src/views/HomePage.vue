@@ -22,6 +22,18 @@
             <a href="https://www.github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
         </div>
     </div>
+    <div class="about-section">
+            <div class="about-card">
+                <div class="about-heading">
+                    <h2>My Background</h2>
+                </div>
+                <div class="about-content">
+                <p>
+                    I am a lover of technology, creativity and art. A Software Developer, an Alumni of the Tech4Dev Foundation where i polished my skills properly. I have a Bachelors in English and Linguistics.
+                </p>
+            </div>
+        </div>
+    </div>
   </template>
   
   <script>
@@ -36,7 +48,7 @@
   body {
     background-color: black;
     color: white;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -62,6 +74,7 @@
     letter-spacing: 10px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
   }
   
   .main-heading {
@@ -145,7 +158,7 @@
     transform: translateX(-50%);
   }
 
-    .social-media {
+  .social-media {
     position: absolute;
     top: 50%;
     right: 20px;
@@ -154,7 +167,7 @@
     flex-direction: column;
   }
 
-    .social-icon {
+  .social-icon {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
@@ -162,10 +175,58 @@
     transition: color 0.3s ease;
   }
 
-    .social-icon:hover {
+  .social-icon:hover {
     color: #3f5efb;
   }
   
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #000;
+}
+
+ .about-card {
+    justify-content: space-between;
+    align-items: center;
+    background: #0c0c0c;
+    box-shadow: 0 4px 8px rgba(37, 37, 37, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px;
+}
+
+ .about-heading {
+    flex: 1;
+    margin-right: 20p  x;
+}
+
+ .about-heading h2 {
+    font-size: 1.2rem;
+    color: #a3a2a2;
+    margin: 0;
+    padding: 20px 0;
+    letter-spacing: 8px;
+}
+
+  .about-content {
+   flex: 3;
+}
+
+  .about-content p {
+   font-size: 4rem;
+   color: #fff;
+   text-align: left;
+   margin: 0;
+   line-height: 1.2;
+   font-family: "Young Serif", serif;
+   font-weight: 400;
+}
+
+
   @keyframes gradient-animation {
     0% {
         filter: hue-rotate(0deg);
@@ -190,7 +251,7 @@
   @media screen and (max-width: 768px) {
     .hero {
        margin: auto;
-       margin-left: 20px;
+       margin-left: 15px;
       
     }
     .main-heading {
@@ -230,6 +291,24 @@
     }
 
     .social-icon {
+      font-size: 1.2rem;
+    }
+
+    .about-card {
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .about-heading {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+
+    .about-heading h2 {
+      font-size: 1.2rem;
+    }
+
+    .about-content p {
       font-size: 1.2rem;
     }
 }

@@ -9,7 +9,7 @@
             <li><router-link to="/about">About</router-link></li>
             <li><router-link to="/projects">Projects</router-link></li>
             <li><router-link to="/blog">Publications</router-link></li>
-            <li><router-link to="/contact">Contact</router-link></li>
+            <li><router-link to="/proficiency">Proficiencies</router-link></li>
           </ul>
         </nav>
         <div class="burger" :class="{ 'toggle': isActive }" @click="toggleNav">
