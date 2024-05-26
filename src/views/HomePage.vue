@@ -190,10 +190,11 @@
   @media screen and (max-width: 768px) {
     .hero {
        margin: auto;
+       margin-left: 20px;
       
     }
     .main-heading {
-      font-size: 5rem;
+      font-size: 4.5rem;
     }
   
     .summary {
@@ -209,9 +210,7 @@
        top: 15%;
        position:relative;
        top: -280px;
-       right: 260px;
-       
-       
+       right: 250px;
     }
   
     .orbit {
