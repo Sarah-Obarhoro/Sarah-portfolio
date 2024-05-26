@@ -1,19 +1,26 @@
 <template>
     <div class="hero">
-      <div class="content">
-        <p class="subheading">Software Developer</p>
-        <h1 class="main-heading">Sarah Obarhoro</h1>
-        <p class="summary">Experienced Fullstack Developer and AI enthusiast. Frontend developer @Rendevouz | Alumni @Tech4Dev | Building @TalentNode</p>
-        <button class="cta-button">Hire Me</button>
-      </div>
-      <div class="image-container">
-        <div class="orbit">
-          <img src="@/assets/images/Sarah.png" alt="Profile Picture" class="profile-image">
-          <div class="circle-container">
-            <div class="orbiting-circle"></div>
-          </div>
+        <div class="content">
+            <p class="subheading">Software Developer</p>
+            <h1 class="main-heading">Sarah Obarhoro</h1>
+            <p class="summary">Experienced Fullstack Developer and AI enthusiast. Frontend developer @Rendevouz | Alumni @Tech4Dev | Building @TalentNode</p>
+            <button class="cta-button">Hire Me</button>
         </div>
-      </div>
+        <div class="image-container">
+            <div class="orbit">
+                <img src="@/assets/images/Sarah.png" alt="Profile Picture" class="profile-image">
+            <div class="circle-container">
+                <div class="orbiting-circle"></div>
+            </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
     </div>
   </template>
   
@@ -22,7 +29,9 @@
     name: 'HomePage'
   }
   </script>
-  
+
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
   <style scoped>
   body {
     background-color: black;
@@ -58,7 +67,7 @@
     background: linear-gradient(270deg, #3f5efb, #ee0979, #fdbb2d, #22c1c3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradient-animation 8s ease infinite;
+    animation: gradient-animation 20s ease infinite;
     margin-bottom: 25px;
   }
   
@@ -131,16 +140,37 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+    .social-media {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+  }
+
+    .social-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+  }
+
+    .social-icon:hover {
+    color: #3f5efb;
+  }
   
   @keyframes gradient-animation {
     0% {
-      background-position: 0% 50%;
+        filter: hue-rotate(0deg);
     }
     50% {
-      background-position: 100% 50%;
+        filter: hue-rotate(180deg);
     }
     100% {
-      background-position: 0% 50%;
+        filter: hue-rotate(360deg);
     }
   }
   
@@ -181,5 +211,13 @@
       height: 15px;
       top: -7.5px;
     }
+
+    .social-media {
+      right: 10px;
     }
+
+    .social-icon {
+      font-size: 1.2rem;
+    }
+}
   </style>
