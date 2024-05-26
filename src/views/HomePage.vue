@@ -48,6 +48,7 @@
     height: 100vh;
     text-align: center;
     background-color: black;
+    margin: auto;
   }
   
   .content {
@@ -226,6 +227,7 @@
 
     .social-media {
       right: 10px;
+      top: 30%;
     }
 
     .social-icon {
