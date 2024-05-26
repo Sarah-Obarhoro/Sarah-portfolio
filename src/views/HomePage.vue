@@ -37,6 +37,8 @@
     background-color: black;
     color: white;
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
   }
   
   .hero {
@@ -96,13 +98,14 @@
   }
   
   .image-container {
-    position: absolute;
-    margin-top: 30px;
+    position:relative;
+    top: -350px;
+    right: 900px;
     border: 5px solid #fff;
     border-radius: 100px;
     background-color: #999;
-    left: 150px;
-    top: 80px;
+    -webkit-transform: translateX(0);
+    transform: translateX(10);
   }
   
   .orbit {
@@ -184,6 +187,10 @@
   }
   
   @media screen and (max-width: 768px) {
+    .hero {
+       margin: auto;
+      
+    }
     .main-heading {
       font-size: 5rem;
     }
@@ -199,6 +206,11 @@
 
     .image-container {
        top: 15%;
+       position:relative;
+       top: -280px;
+       right: 260px;
+       
+       
     }
   
     .orbit {
