@@ -3,7 +3,7 @@
         <div class="content">
             <p class="subheading">Software Developer</p>
             <h1 class="main-heading">Sarah Obarhoro</h1>
-            <p class="summary">Experienced Fullstack Developer and AI enthusiast. Frontend developer @Rendevouz | Alumni @Tech4Dev | Building @TalentNode</p>
+            <p class="summary">Experienced Fullstack Developer and AI enthusiast. Frontend Web developer @Rendevouz | Alumni @Tech4Dev | Building @TalentNode</p>
             <button class="cta-button">Hire Me</button>
         </div>
         <div class="image-container">
@@ -34,6 +34,37 @@
             </div>
         </div>
     </div>
+
+    <div class="stack-section">
+        <div class="stack-card">
+            <div class="stack-heading">
+                <h2>Technology Stack</h2>
+            </div>
+            <div class="stack-content">
+                
+                <p>
+                    Html & CSS, Javascript, Typescript, ReactJs, VueJs, Next, Nuxt, NodeJs, ExpressJs, MySQL, MongoDB, PostgreSQL 
+                </p>
+                
+            </div>
+        </div>
+  </div>
+  <div class="proficiency-section">
+        <div class="proficiency-card">
+            <div class="proficiency-heading">
+                <h2>Proficiency</h2>
+            </div>
+            <div class="proficiency-content">
+                
+                <p>
+                    Rest API, Microservice, Git & Github, Data Structure & Algorithms, Testing  
+                </p>
+                
+            </div>
+        </div>
+  </div>
+
+
   </template>
   
   <script>
@@ -75,6 +106,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    margin-top: 90px;
   }
   
   .main-heading {
@@ -113,7 +145,7 @@
   
   .image-container {
     position:relative;
-    top: -350px;
+    top: -280px;
     right: 900px;
     border: 5px solid #fff;
     border-radius: 100px;
@@ -185,7 +217,7 @@
     align-items: center;
     padding: 50px 20px;
     background-color: #000;
-}
+  }
 
  .about-card {
     justify-content: space-between;
@@ -197,12 +229,12 @@
     max-width: 1200px;
     width: 100%;
     margin: 20px;
-}
+  }
 
  .about-heading {
     flex: 1;
     margin-right: 20p  x;
-}
+  }
 
  .about-heading h2 {
     font-size: 1.2rem;
@@ -210,21 +242,98 @@
     margin: 0;
     padding: 20px 0;
     letter-spacing: 8px;
-}
+  }
 
   .about-content {
-   flex: 3;
-}
+    flex: 3;
+  }
 
   .about-content p {
-   font-size: 4rem;
-   color: #fff;
-   text-align: left;
-   margin: 0;
-   line-height: 1.2;
-   font-family: "Young Serif", serif;
-   font-weight: 400;
-}
+    font-size: 4rem;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    line-height: 1.2;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+  }
+
+  .stack-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: "Young Serif", serif;
+  }
+
+  .stack-card {
+    background: #0c0c0c;
+    box-shadow: 0 4px 8px rgba(37, 37, 37, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .stack-heading h2 {
+    font-size: 1.2rem;
+    color: #a3a2a2;
+    margin: 0;
+    padding: 20px 0;
+    letter-spacing: 8px;
+  }
+
+  /* .stack-content h3 {
+    font-size: 2rem;
+    color: #eee;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  } */
+
+  .stack-content p {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    }
+
+  .proficiency-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: "Young Serif", serif;
+  }
+
+  .proficiency-card {
+    background: #0c0c0c;
+    box-shadow: 0 4px 8px rgba(37, 37, 37, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .proficiency-heading h2 {
+    font-size: 1.2rem;
+    color: #a3a2a2;
+    margin: 0;
+    padding: 20px 0;
+    letter-spacing: 8px;
+  }
+
+  .proficiency-content p {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    }
 
 
   @keyframes gradient-animation {
@@ -270,7 +379,7 @@
     .image-container {
        top: 15%;
        position:relative;
-       top: -280px;
+       top: -230px;
        right: 250px;
     }
   
@@ -297,6 +406,7 @@
     .about-card {
       flex-direction: column;
       padding: 20px;
+      margin-top: -80px;
     }
 
     .about-heading {
@@ -305,11 +415,56 @@
     }
 
     .about-heading h2 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      letter-spacing: 4px;
     }
 
     .about-content p {
-      font-size: 1.2rem;
+      font-size: 2rem;
+      text-align: left;
+    }
+    .stack-card {
+      flex-direction: column;
+      padding: 20px;
+      margin-top: -80px;
+    }
+
+    .stack-heading {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+
+    .stack-heading h3 {
+      font-size: 1.1rem;
+      letter-spacing: 4px;
+      text-align: center;
+    }
+
+    .stack-content p {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .proficiency-card {
+      flex-direction: column;
+      padding: 20px;
+      margin-top: -80px;
+    }
+
+    .proficiency-heading {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+
+    .proficiency-heading h2 {
+      font-size: 1.1rem;
+      letter-spacing: 4px;
+      text-align: center;
+    }
+
+    .proficiency-content p {
+      font-size: 2rem;
+      text-align: center;
     }
 }
   </style>
