@@ -1,99 +1,112 @@
 <template>
     <div class="project-page">
-        <div class="heading">
-        <h2>Projects I Have Worked On</h2>
-
-        <div class="projects">
-            <Project 
-                :imageUrl="imageUrls[0]" 
-                title="Ponec Interiors" 
-                content="A simple landing page for a furniture company."
-                link="https://ponecinteriors.netlify.app/">
-            </Project>
-
-            <Project 
-                :imageUrl="imageUrls[1]" 
-                title="Notepad" 
-                content="A todo web application that performs basic CRUD operations."
-                link="https://jsnotepad.netlify.app/note.html">    
-            </Project>
-
-            <Project 
-                :imageUrl="imageUrls[2]" 
-                title="GPT 3" 
-                content="A simple landing page to launch GPT 3 and educae potential users."
-                link="https://mygpt3app.netlify.app/">    
-            </Project>
-
-            <Project 
-                :imageUrl="imageUrls[3]" 
-                title="Afritech" 
-                content="Africktech needed a simple landing page to showcase company information, with a form where potential clients can contact them."
-                link="https://africk.netlify.app/#home">    
-            </Project>
-        </div>
+      <div class="heading">
+        <h2>My Recent Projects</h2>
+      </div>
+  
+      <div class="projects">
+        <Project 
+          v-for="(imageUrl, index) in imageUrls" 
+          :key="index" 
+          :imageUrl="imageUrl" 
+          :title="projectTitles[index]" 
+          :content="projectContents[index]" 
+          :link="projectLinks[index]">
+        </Project>
+      </div>
     </div>
-    </div>
-</template>
-
-<script>
-import Project from '../components/ProjectsCard.vue';
-export default {
+  </template>
+  
+  <script>
+  import Project from '../components/ProjectsCard.vue';
+  export default {
     name: 'ProjectPage',
     components: {
-        Project,
+      Project,
     },
     data() {
-        return {
-            // imageUrl: require('@/assets/images/Sarah.png')
-            imageUrls: [
-            require('@/assets/images/Ponec.jpg'),
-            require('@/assets/images/Todo.jpg'),
-            require('@/assets/images/GPT3.png'),
-            require('@/assets/images/Africk.png'),
-            ]
-        }
+      return {
+        imageUrls: [
+          require('@/assets/images/Ponec.jpg'),
+          require('@/assets/images/Todo.jpg'),
+          require('@/assets/images/GPT3.png'),
+          require('@/assets/images/Africk.png'),
+        ],
+        projectTitles: [
+          'Ponec Interiors',
+          'Notepad',
+          'GPT 3',
+          'Afritech'
+        ],
+        projectContents: [
+          'A simple landing page for a furniture company.',
+          'A todo web application that performs basic CRUD operations.',
+          'A simple landing page to launch GPT 3 and educate potential users.',
+          'Africktech needed a simple landing page to showcase company information, with a form where potential clients can contact them.'
+        ],
+        projectLinks: [
+          'https://ponecinteriors.netlify.app/',
+          'https://jsnotepad.netlify.app/note.html',
+          'https://mygpt3app.netlify.app/',
+          'https://africk.netlify.app/#home'
+        ]
+      }
     }
-}
-</script>
-
-<style scoped>
+  }
+  </script>
+  
+  <style scoped>
   body {
     background-color: black;
     color: white;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.project-page {
+  }
+  
+  .project-page {
     padding: 40px;
     background-color: #0c0c0c;
     box-shadow: 0 4px 8px rgba(37, 37, 37, 0.1);
     max-width: 1200px;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
-    margin-left: 8%; 
-    margin-top: 6%;
-}
-
-.heading h2{
-    font-size: 1.2rem;
+    margin: 10% auto;
+    transition: all 0.3s ease;
+  }
+  
+  .project-page:hover {
+    transform: scale(1.02);
+  }
+  
+  .heading h2 {
+    font-size: 2rem;
     color: #a3a2a2;
     margin: 0;
     padding: 20px 0;
-    letter-spacing: 8px;
-}
-.projects{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     margin-top: 5%;
-}
-@media screen and (max-width: 768px) {
+  }
+  
+  .projects > * {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .projects > *:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media screen and (max-width: 768px) {
     .project-page {
-    width: 80%;
-}
-}
-</style>
+      width: 90%;
+    }
+  }
+  </style>

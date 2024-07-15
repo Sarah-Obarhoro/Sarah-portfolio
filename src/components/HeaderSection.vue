@@ -113,8 +113,8 @@ nav ul li a {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 100%;
-    background-color: #333;
+    width: 60%;
+    background-color: rgba(5, 5, 5, 0.9);
     flex-direction: column;
     align-items: center;
     justify-content: center;
