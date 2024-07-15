@@ -15,11 +15,11 @@
             </div>
         </div>
         <div class="social-media">
-            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://web.facebook.com/sarah.obarhoro/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sara_obarhoro/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sarah-obarhoro/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/Saay_raahh" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/Sarah-Obarhoro" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
         </div>
     </div>
     <div class="about-section">
