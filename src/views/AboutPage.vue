@@ -1,4 +1,4 @@
-<template>
+  <template>
     <div class="about-section">
         <div class="about-card">
                 <div class="about-heading">
@@ -33,7 +33,7 @@
                         So, if you're looking for a frontend developer who can bring both technical skills and creative vision to the table, let's connect. Together, we can turn your digital dreams into reality and create web experiences that truly stand out. Ready to level up your online presence? Let's make some digital magic happen!
                     </p>
                 </div>
-                <button class="cta-button">Download My CV</button>
+                <button class="cta-button">Download CV</button>
         </div>
     </div>
 </template>
@@ -103,8 +103,8 @@ export default {
     background: transparent;
     color: white;
     border: 1px solid #fff;
-    border-radius: 25px;
-    padding: 10px 35px;
+    border-radius: 5px;
+    padding: 20px 30px;
     margin-top: 50px;
     font-size: 1.2rem;
     cursor: pointer;
@@ -114,7 +114,7 @@ export default {
 .cta-button:hover {
     background: linear-gradient(270deg, #3f5efb, #ee0979);
     border: none;
-    color: black;
+    color: rgb(255, 255, 255);
     animation: shaking 0.5s 2;
 }
 @keyframes shaking {
@@ -130,7 +130,8 @@ export default {
     margin-left: 6%;
     }
     .about-content p {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    
   }
 }
 </style>

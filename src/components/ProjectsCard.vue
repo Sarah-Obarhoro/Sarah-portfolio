@@ -85,7 +85,7 @@ export default{
         border: 1px solid #1f1f1f;
         border-radius: 20px;
         background: #1f1f1f;
-        padding: 15px;
+        padding: 10px;
         padding-bottom: 30px;
         margin: 35px 0px;
     }
