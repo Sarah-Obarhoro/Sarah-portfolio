@@ -29,7 +29,13 @@
                 </div>
                 <div class="about-content">
                 <p>
-                    I am a lover of technology, creativity and art. A Software Developer, an Alumni of the Tech4Dev Foundation where i polished my skills properly. I have a Bachelors in English and Linguistics.
+                    I am a lover of technology, creativity and art. 
+                    <br> 
+                    <br>
+                    A Software Developer, an Alumni of the Tech4Dev Foundation where i polished my skills properly. 
+                    <br> 
+                    <br>
+                    I have a Bachelors in English and Literary Studies.
                 </p>
             </div>
         </div>
@@ -141,7 +147,15 @@
     background: linear-gradient(270deg, #3f5efb, #ee0979);
     border: none;
     color: black;
-  }
+    animation: shaking 0.5s 2;
+}
+@keyframes shaking {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(-4deg);}
+    50% {transform: rotate(0deg);}
+    70% {transform: rotate(4deg);}
+    100% {transform: rotate(0deg);}
+}
   
   .image-container {
     position:relative;
@@ -376,10 +390,13 @@
       padding: 8px 30px;
     }
 
+    .content{
+      margin-top: 10%;
+    }
+
     .image-container {
-       top: 15%;
        position:relative;
-       top: -230px;
+        top: -200px;
        right: 250px;
     }
   
