@@ -1,23 +1,29 @@
   <template>
     <div class="about-section">
-        <div class="about-card">
-                <div class="about-heading">
-                    <h2>About Me</h2>
-                </div>
-                <div class="about-content">
-                  <p>
-                    Hey there! I'm Sarah, a Lead Frontend Engineer with 4+ years of experience building scalable web and mobile applications and leading agile teams. My journey from a degree in English & Literary Studies to tech leadership shaped my communication skills and a creative edge I bring into solving complex engineering challenges.
-                    <br><br>
-                    I've architected and delivered platforms that serve 50K+ users monthly, improved load times by 70%, and automated payroll for 50,000+ employees with 99.8% accuracy. Whether it's building JWT-secured systems, implementing RBAC, or leading frontend strategy at Jayco Links and Tunnels NG—I ensure every line of code supports real business outcomes.
-                    <br><br>
-                    I lead with clarity, code with purpose, and write to teach. As a technical writer on Hashnode, my articles have empowered thousands of developers worldwide to build better frontend experiences.
-                    <br><br>
-                    When you work with me, you get a blend of leadership, technical depth, and user-first thinking. Let’s create something powerful together.
-                  </p>
-
-                </div>
-                <button class="cta-button">Download CV</button>
+      <div class="about-card">
+        <div class="about-heading">
+            <h2>About Me</h2>
         </div>
+        <div class="about-content">
+          <p>
+            Hey there! I'm Sarah, a Lead Frontend Engineer with 4+ years of experience building scalable web and mobile applications and leading agile teams. My journey from a degree in English & Literary Studies to tech leadership shaped my communication skills and a creative edge I bring into solving complex engineering challenges.
+            <br><br>
+            I've architected and delivered platforms that serve 50K+ users monthly, improved load times by 70%, and automated payroll for 50,000+ employees with 99.8% accuracy. Whether it's building JWT-secured systems, implementing RBAC, or leading frontend strategy at Jayco Links and Tunnels NG—I ensure every line of code supports real business outcomes.
+            <br><br>
+            I lead with clarity, code with purpose, and write to teach. As a technical writer on Hashnode, my articles have empowered thousands of developers worldwide to build better frontend experiences.
+            <br><br>
+            When you work with me, you get a blend of leadership, technical depth, and user-first thinking. Let’s create something powerful together.
+          </p>
+        </div>
+
+        <!-- Download CV Button -->
+        <a class="cta-button" 
+          href="/Sarah-Obarhoro-CV.pdf" 
+          download="Sarah-Obarhoro-CV" 
+          aria-label="Download Sarah Obarhoro's CV">
+          Download CV
+        </a>
+      </div>
     </div>
 </template>
 
@@ -82,18 +88,21 @@ export default {
     font-weight: 400;
   }
 
-.cta-button {
-    background: transparent;
-    color: white;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 20px 30px;
-    margin-top: 50px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background 0.3s ease, color 0.3s ease;
-    margin-left: 40%;
+a.cta-button {
+  background: transparent;
+  color: white;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin-top: 50px !important;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none; 
+  display: inline-block; 
+  transition: background 0.3s ease, color 0.3s ease;
+  margin-left: 40%;
 }
+
 .cta-button:hover {
     background: linear-gradient(270deg, #3f5efb, #ee0979);
     border: none;

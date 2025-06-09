@@ -4,7 +4,7 @@
             <p class="subheading">Lead Frontend Engineer</p>
             <h1 class="main-heading">Sarah Obarhoro</h1>
             <p class="summary">Lead Frontend Engineer with 4+ years architecting high-performance web and mobile applications. Expert in JavaScript ecosystems & team leadership.</p>
-            <button class="cta-button">Hire Me</button>
+            <button class="cta-button" @click="hireMe">Hire Me</button>
         </div>
         <div class="image-container">
             <div class="orbit">
@@ -90,7 +90,14 @@
   
   <script>
   export default {
-    name: 'HomePage'
+    name: 'HomePage',
+
+    methods: {
+    hireMe() {
+      // window.location.href = "mailto:obarhorosarah@gmail.com";
+      window.open("https://www.linkedin.com/in/sarah-obarhoro/", "_blank");
+    }
+    }
   }
   </script>
 
