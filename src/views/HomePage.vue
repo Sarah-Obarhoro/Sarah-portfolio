@@ -181,7 +181,7 @@
   
   .image-container {
     position:relative;
-    top: -280px;
+    top: -260px;
     right: 900px;
     border: 5px solid #fff;
     border-radius: 100px;
