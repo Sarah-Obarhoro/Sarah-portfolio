@@ -1,14 +1,14 @@
 <template>
     <div class="hero">
         <div class="content">
-            <p class="subheading">Software Developer</p>
+            <p class="subheading">Lead Frontend Engineer</p>
             <h1 class="main-heading">Sarah Obarhoro</h1>
-            <p class="summary">Experienced Fullstack Developer and AI enthusiast. Frontend Web developer @Rendevouz | Alumni @Tech4Dev | Building @TalentNode</p>
+            <p class="summary">Lead Frontend Engineer with 4+ years architecting high-performance web and mobile applications. Expert in JavaScript ecosystems & team leadership.</p>
             <button class="cta-button">Hire Me</button>
         </div>
         <div class="image-container">
             <div class="orbit">
-                <img src="@/assets/images/Sarah.png" alt="Profile Picture" class="profile-image">
+                <img src="@/assets/images/Sarah.jpeg" alt="Profile Picture" class="profile-image">
             <div class="circle-container">
                 <div class="orbiting-circle"></div>
             </div>
@@ -28,17 +28,36 @@
                     <h2>My Background</h2>
                 </div>
                 <div class="about-content">
-                <p>
-                    I am a lover of technology, creativity and art. 
-                    <br> 
-                    <br>
-                    A Software Developer, an Alumni of the Tech4Dev Foundation where i polished my skills properly. 
-                    <br> 
-                    <br>
-                    I have a Bachelors in English and Literary Studies.
-                </p>
+                  <p>
+                    Lead Frontend Engineer passionate about building scalable web solutions and fostering high-performing teams.
+                    <br><br>
+                    With over 4 years of experience leading frontend development, I’ve delivered fast, responsive applications that cut time-to-market by 60% and boosted user engagement by 65%.
+                    <br><br>
+                    Rooted in a background in English & Literary Studies, I bring a distinct blend of analytical thinking, creative problem-solving, and clear communication to technical leadership—translating complex ideas into elegant digital experiences.
+                  </p>
             </div>
         </div>
+    </div>
+
+    <div class="achievements-section">
+      <div class="achievements-card">
+        <div class="achievements-heading">
+          <h2>Key Achievements</h2>
+        </div>
+        <div class="achievements-content">
+          <p>
+            • Led the frontend team for a lifestyle platform, achieving 70% faster load times and a 20% boost in user engagement.  
+            <br><br>
+            • Architected reusable UI component libraries, reducing time-to-delivery by 60% across multiple projects.  
+            <br><br>
+            • Automated payroll processing for over 50,000 salaries monthly with 99.8% accuracy.  
+            <br><br>
+            • Secured 10K+ daily transactions for enterprise clients by implementing JWT-based authentication and eliminating 70% of vulnerabilities.  
+            <br><br>
+            • Delivered 15+ custom web and mobile applications as an independent consultant, improving client conversion rates by 40%.  
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="stack-section">
@@ -47,27 +66,23 @@
                 <h2>Technology Stack</h2>
             </div>
             <div class="stack-content">
-                
-                <p>
-                    Html & CSS, Javascript, Typescript, ReactJs, VueJs, Next, Nuxt, NodeJs, ExpressJs, MySQL, MongoDB, PostgreSQL 
-                </p>
-                
+              <p>
+                JavaScript (ES6+), TypeScript, React (Hooks), Vue 3 (Composition API), Next.js, Nuxt 3, React Native, Node.js, Express, PostgreSQL, MongoDB, Firebase
+              </p>
             </div>
         </div>
   </div>
   <div class="proficiency-section">
-        <div class="proficiency-card">
-            <div class="proficiency-heading">
-                <h2>Proficiency</h2>
-            </div>
-            <div class="proficiency-content">
-                
-                <p>
-                    Rest API, Microservice, Git & Github, Data Structure & Algorithms, Testing  
-                </p>
-                
-            </div>
-        </div>
+    <div class="proficiency-card">
+      <div class="proficiency-heading">
+          <h2>Leadership & Expertise</h2>
+      </div>
+      <div class="proficiency-content">
+          <p>
+              Team Leadership, System Architecture, Performance Optimization, CI/CD Pipelines, Agile/Scrum, RBAC Security, API Design, Technical Writing
+          </p>
+      </div>
+    </div>
   </div>
 
 
@@ -272,7 +287,7 @@
     font-weight: 400;
   }
 
-  .stack-section {
+  .stack-section, .achievements-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -282,7 +297,7 @@
     font-family: "Young Serif", serif;
   }
 
-  .stack-card {
+  .stack-card, .achievements-card {
     background: #0c0c0c;
     box-shadow: 0 4px 8px rgba(37, 37, 37, 0.1);
     border-radius: 10px;
@@ -292,7 +307,7 @@
     margin: 20px;
   }
 
-  .stack-heading h2 {
+  .stack-heading h2, .achievements-heading h2 {
     font-size: 1.2rem;
     color: #a3a2a2;
     margin: 0;
@@ -300,14 +315,7 @@
     letter-spacing: 8px;
   }
 
-  /* .stack-content h3 {
-    font-size: 2rem;
-    color: #eee;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  } */
-
-  .stack-content p {
+  .stack-content p, .achievements-content p {
     font-size: 4rem;
     color: #fff;
     margin-bottom: 20px;
@@ -440,24 +448,24 @@
       font-size: 2rem;
       text-align: left;
     }
-    .stack-card {
+    .stack-card, .achievements-card {
       flex-direction: column;
       padding: 20px;
       margin-top: -80px;
     }
 
-    .stack-heading {
+    .stack-heading, .achievements-heading {
       margin-bottom: 20px;
       margin-right: 0;
     }
 
-    .stack-heading h3 {
+    .stack-heading h3, .achievements-heading h3 {
       font-size: 1.1rem;
       letter-spacing: 4px;
       text-align: center;
     }
 
-    .stack-content p {
+    .stack-content p, .achievements-content p {
       font-size: 2rem;
       text-align: center;
     }

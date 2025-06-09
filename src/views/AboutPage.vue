@@ -5,33 +5,16 @@
                     <h2>About Me</h2>
                 </div>
                 <div class="about-content">
-                    <p>
-                        Hey there! I'm Sarah, a frontend developer with a knack for turning complex ideas into sleek, user-friendly interfaces. With two years of hands-on experience in web solutions, I've honed my skills in crafting digital experiences that not only look great but also perform seamlessly.
-                        <br>
-                        <br>
+                  <p>
+                    Hey there! I'm Sarah, a Lead Frontend Engineer with 4+ years of experience building scalable web and mobile applications and leading agile teams. My journey from a degree in English & Literary Studies to tech leadership shaped my communication skills and a creative edge I bring into solving complex engineering challenges.
+                    <br><br>
+                    I've architected and delivered platforms that serve 50K+ users monthly, improved load times by 70%, and automated payroll for 50,000+ employees with 99.8% accuracy. Whether it's building JWT-secured systems, implementing RBAC, or leading frontend strategy at Jayco Links and Tunnels NG—I ensure every line of code supports real business outcomes.
+                    <br><br>
+                    I lead with clarity, code with purpose, and write to teach. As a technical writer on Hashnode, my articles have empowered thousands of developers worldwide to build better frontend experiences.
+                    <br><br>
+                    When you work with me, you get a blend of leadership, technical depth, and user-first thinking. Let’s create something powerful together.
+                  </p>
 
-                        My journey from an arts background to tech has given me a unique edge. I bring a creative flair to problem-solving that sets my work apart. Whether it's optimizing load times, ensuring cross-browser compatibility, or creating responsive designs that look stunning on any device, I've got you covered.
-                        <br>
-                        <br>
-
-                        Why should you consider me? Well, I'm not just about writing code - I'm about creating impact. I've successfully delivered projects that have significantly improved user engagement and conversion rates for my clients. My ability to blend artistic vision with technical expertise means you're getting the best of both worlds.
-                        <br>
-                        <br>
-
-                        I'm a pro at translating design concepts into living, breathing websites using the MERN Stack. But I don't stop there - I'm always pushing the envelope, currently diving deep into Web 3.0 technologies to stay ahead of the curve.
-                        <br>
-                        <br>
-
-                        What really sets me apart is my commitment to collaboration. I believe the best results come from open communication and teamwork. I'm not just a coder you hire; I'm a partner who's invested in the success of your project.
-                        <br>
-                        <br>
-
-                        When you work with me, you're getting more than just a developer. You're getting an innovator, a problem-solver, and a dedicated professional who's as excited about your project as you are. I approach each new challenge as an opportunity to learn, grow, and deliver something extraordinary.
-                        <br>
-                        <br>
-
-                        So, if you're looking for a frontend developer who can bring both technical skills and creative vision to the table, let's connect. Together, we can turn your digital dreams into reality and create web experiences that truly stand out. Ready to level up your online presence? Let's make some digital magic happen!
-                    </p>
                 </div>
                 <button class="cta-button">Download CV</button>
         </div>
