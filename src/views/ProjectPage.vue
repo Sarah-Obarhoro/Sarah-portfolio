@@ -383,6 +383,7 @@ export default {
   letter-spacing: 2px;
   position: relative;
   padding-left: 20px;
+  font-family: "Young Serif", serif;
 }
 
 .challenge-section h4:before,
@@ -592,6 +593,7 @@ export default {
 @media screen and (max-width: 768px) {
   .project-page {
     padding: 40px 20px;
+    margin-top: 40px;
   }
 
   .heading h2 {

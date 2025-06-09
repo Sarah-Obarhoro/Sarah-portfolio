@@ -119,7 +119,7 @@ a.cta-button {
 
 @media screen and (max-width: 768px) {
     .cta-button {
-    margin-left: 6%;
+    margin-left: 11% !important;
     }
     .about-content p {
     font-size: 1rem;

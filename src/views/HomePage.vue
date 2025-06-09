@@ -285,7 +285,7 @@
   }
 
   .about-content p {
-    font-size: 4rem;
+    font-size: 2rem;
     color: #fff;
     text-align: left;
     margin: 0;
@@ -323,7 +323,8 @@
   }
 
   .stack-content p, .achievements-content p {
-    font-size: 4rem;
+    font-size: 2rem;
+    text-align: left;
     color: #fff;
     margin-bottom: 20px;
     line-height: 1.5;
@@ -358,7 +359,8 @@
   }
 
   .proficiency-content p {
-    font-size: 4rem;
+    font-size: 2rem;
+    text-align: left;
     color: #fff;
     margin-bottom: 20px;
     line-height: 1.5;
@@ -452,7 +454,7 @@
     }
 
     .about-content p {
-      font-size: 2rem;
+      font-size: 1rem;
       text-align: left;
     }
     .stack-card, .achievements-card {
@@ -473,8 +475,8 @@
     }
 
     .stack-content p, .achievements-content p {
-      font-size: 2rem;
-      text-align: center;
+      font-size: 1rem;
+      text-align: left;
     }
 
     .proficiency-card {
@@ -495,8 +497,8 @@
     }
 
     .proficiency-content p {
-      font-size: 2rem;
-      text-align: center;
+      font-size: 1rem;
+      text-align: left;
     }
 }
   </style>
